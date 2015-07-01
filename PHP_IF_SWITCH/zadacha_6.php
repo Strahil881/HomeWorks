@@ -11,6 +11,7 @@ switch($number){
 	case "8":echo "eight";break;
 	case "9":echo "nine";break;
 	case "10":echo "ten";break;
+	default "Vavedete chislo ot 1-9";break;
 }
 
 ?>
