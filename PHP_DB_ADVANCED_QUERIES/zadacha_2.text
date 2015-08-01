@@ -1,0 +1,9 @@
+1.a SELECT * FROM `magics`JOIN feelings ON magics.feeling=feelings.feeling WHERE length>60
+
+1.b SELECT * FROM `magics`JOIN feelings ON magics.feeling=feelings.feeling WHERE strength>50 AND strength<75
+
+SELECT * FROM `magics`JOIN feelings ON magics.feeling=feelings.feeling  SELECT * FROM `feelings` JOIN needs ON feelings.need=needs.need WHERE needs.need='understanding'
+
+2.a SELECT COUNT(*),AVG(weight),SUM(weight) FROM `dlops` WHERE 1
+2.b SELECT status, COUNT(*),AVG(weight),SUM(weight) FROM `dlops` GROUP BY status
+2.c SELECT COUNT(*),MIN(weight),MAX(weight) FROM `dlops` WHERE 1
