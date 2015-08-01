@@ -1,0 +1,11 @@
+1.a SELECT * FROM `dlops` WHERE race='tree'
+1.b SELECT * FROM `races` WHERE type='tree' AND sun_coef>50
+1.c SELECT * FROM `magics` WHERE magic LIKE '$ur$' OR '$os$'
+1.d INSERT INTO `races`(`race`, `type`, `superpower`, `water_coef`, `sun_coef`, `population`)
+	 VALUES ('mandarian','bush',50,40,20,1000)
+	INSERT INTO `races`(`race`, `type`, `superpower`, `water_coef`, `sun_coef`, `population`) 
+     VALUES ('grozde','bush',20,90,60,1222000)
+1.e UPDATE `races` SET `population`=`population`*0.05 WHERE sun_coef>50
+1.f UPDATE `dlops` SET`weight`=`weight`+5 WHERE gender='male'
+1.g DELETE FROM `magics` WHERE required_experience<35
+1.h DELETE FROM `magics` WHERE date_deleted IS NOT NULL
